@@ -1,6 +1,6 @@
 # langfuse
 
-![Version: 1.2.18](https://img.shields.io/badge/Version-1.2.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.66.1](https://img.shields.io/badge/AppVersion-3.66.1-informational?style=flat-square)
+![Version: 1.2.20](https://img.shields.io/badge/Version-1.2.20-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.66.1](https://img.shields.io/badge/AppVersion-3.66.1-informational?style=flat-square)
 
 Open source LLM engineering platform - LLM observability, metrics, evaluations, prompt management.
 
@@ -56,7 +56,7 @@ Open source LLM engineering platform - LLM observability, metrics, evaluations, 
 | langfuse.encryptionKey | object | `{"secretKeyRef":{"key":"","name":""},"value":""}` | Used to encrypt sensitive data. Must be 256 bits (64 string characters in hex format). Generate via `openssl rand -hex 32`. |
 | langfuse.extraContainers | list | `[]` | Allows additional containers to be added to all langfuse deployments |
 | langfuse.extraInitContainers | list | `[]` | Allows additional init containers to be added to all langfuse deployments |
-| langfuse.extraLifecycle | list | `[]` | Allows additional lifecycle hooks to be added to all langfuse deployments |
+| langfuse.extraLifecycle | object | `{}` | Allows additional lifecycle hooks to be added to all langfuse deployments |
 | langfuse.extraVolumeMounts | list | `[]` | Allows additional volume mounts to be added to all langfuse deployments |
 | langfuse.extraVolumes | list | `[]` | Allows additional volumes to be added to all langfuse deployments |
 | langfuse.features.experimentalFeaturesEnabled | bool | `false` | Enable experimental features |

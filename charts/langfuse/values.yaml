@@ -148,7 +148,7 @@ langfuse:
   extraVolumeMounts: []
 
   # -- Allows additional lifecycle hooks to be added to all langfuse deployments
-  extraLifecycle: []
+  extraLifecycle: {}
 
   # Web deployment configuration
   web:
